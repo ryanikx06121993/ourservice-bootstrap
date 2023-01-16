@@ -1,0 +1,82 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 50px;
+}
+
+.single-service {
+  background-color: #212121;
+  padding: 60px;
+  height: 400px;
+  transition: all 0.9s ease 0s;
+}
+
+.single-service i {
+  color: tomato;
+  font-size: 80px;
+  padding-bottom: 20px;
+}
+
+.single-service h3 {
+  color: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.single-service p {
+  display: none;
+  transition: all 0.9s ease 0s;
+  color: #fff;
+  font-weight: 700;
+}
+
+.single-service:hover p {
+  display: block;
+}
+
+.single-service:hover i {
+  font-size: 120px;
+  transition: 0.9s;
+  color: #fff;
+}
+
+.single-service:hover {
+  background-color: tomato;
+}
+
+/* Responsive */
+/* tablet device */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single-service {
+    margin-bottom: 20px;
+  }
+}
+
+/* mobile */
+@media only screen and (max-width: 767px) {
+  h2 {
+    font-size: 25px;
+  }
+
+  .single-service {
+    margin-bottom: 20px;
+    padding: 40px;
+  }
+
+  .single-service:hover i {
+    font-size: 100px;
+  }
+}
